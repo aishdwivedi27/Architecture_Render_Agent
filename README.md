@@ -18,10 +18,15 @@ Automated architectural drawing analysis and visualisation agent.
 - input/ - incoming architectural drawings
 - output/ - completed renders
 - jobs/ - job-specific working data
-- eferences/ - project reference material
-- knowledge/approved/ - approved agent knowledge
-- knowledge/proposed/ - proposed knowledge changes for human review
+- 
+- references/ - project reference material
+- knowledge/ - agent knowledge base (proprietary, not included in this repository)
+  - approved/ - approved agent knowledge
+  - proposed/ - proposed knowledge changes for human review
 - workflows/ - automation workflows
 - schemas/ - structured data schemas
 - scripts/ - supporting scripts
 - logs/ - execution logs
+# docker composer up -d
+# docker compose ps      to check 
+# docker composer down 

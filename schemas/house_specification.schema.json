@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Architecture Render House Specification",
+  "type": "object",
+  "required": [
+    "job_id",
+    "project_status",
+    "source_evidence",
+    "site",
+    "dwellings",
+    "uncertainties",
+    "conflicts"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "project_status": {
+      "type": "object"
+    },
+    "source_evidence": {
+      "type": "array"
+    },
+    "site": {
+      "type": "object"
+    },
+    "dwellings": {
+      "type": "array"
+    },
+    "house_type": {
+      "type": "object"
+    },
+    "accommodation": {
+      "type": "object"
+    },
+    "master": {
+      "type": "object"
+    },
+    "kitchen": {
+      "type": "object"
+    },
+    "exterior": {
+      "type": "object"
+    },
+    "interior": {
+      "type": "object"
+    },
+    "outdoor": {
+      "type": "object"
+    },
+    "sustainability": {
+      "type": "object"
+    },
+    "required_renders": {
+      "type": "array"
+    },
+    "uncertainties": {
+      "type": "array"
+    },
+    "conflicts": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array"
+    }
+  }
+}

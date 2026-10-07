@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rendering Checklist",
+  "type": "object",
+  "required": [
+    "job_id",
+    "checks",
+    "blockers",
+    "non_blockers",
+    "requested_views",
+    "ready_for_render"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array"
+    },
+    "blockers": {
+      "type": "array"
+    },
+    "non_blockers": {
+      "type": "array"
+    },
+    "requested_views": {
+      "type": "array"
+    },
+    "ready_for_render": {
+      "type": "boolean"
+    },
+    "checklist_version": {
+      "type": "string"
+    }
+  }
+}

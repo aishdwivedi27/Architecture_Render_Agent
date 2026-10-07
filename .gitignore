@@ -30,3 +30,5 @@ references/*
 Thumbs.db
 .vscode/*
 !.vscode/extensions.json
+
+knowledge/

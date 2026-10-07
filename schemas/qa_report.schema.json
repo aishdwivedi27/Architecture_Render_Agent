@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visual QA Report",
+  "type": "object",
+  "required": [
+    "job_id",
+    "results"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "render_id",
+          "pass_fail",
+          "final_status"
+        ]
+      }
+    }
+  }
+}

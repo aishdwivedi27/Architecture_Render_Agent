@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Render Manifest",
+  "type": "object",
+  "required": [
+    "job_id",
+    "renders"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "renders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "render_id",
+          "view_type",
+          "required_features",
+          "qa_criteria"
+        ]
+      }
+    }
+  }
+}
