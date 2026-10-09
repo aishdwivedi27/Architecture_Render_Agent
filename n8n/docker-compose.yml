@@ -1,16 +1,20 @@
 services:
   n8n:
-    image: docker.n8n.io/n8nio/n8n:2.39.8
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: architecture-render-n8n
     ports:
       - "5678:5678"
     environment:
      # This unlocks access to your mapped folder and keeps the default folder active
       - N8N_RESTRICT_FILE_ACCESS_TO=/workspace;/home/node/.n8n-files
+      - NODES_EXCLUDE=[]
     volumes:
       - n8n_data:/home/node/.n8n
       - ../:/workspace
     restart: unless-stopped
+    
 
 volumes:
   n8n_data:
